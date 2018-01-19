@@ -1,11 +1,1 @@
-*.pyc
-env/
-venv/
-cache/
-.idea
-dist/
-motivate.egg-info/
-.DS_Store
 
-moti
-mmoti
