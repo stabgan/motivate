@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
-
+from database import data
 import json
-import os
 
-scriptpath = os.path.dirname(__file__)
-data_dir = os.path.join(scriptpath, 'data')
-quote_files = [os.path.join(data_dir, f) for f in os.listdir(data_dir) if os.path.isfile(os.path.join(data_dir, f))]
 quotes = []
-for f in quote_files:
-    with open(f, 'r') as quote_file:
-        quotes += json.load(quote_file)['data']
+quotes += json.load(quote_file)['data']
 
 unique_quotes = []
 seen_quotes = set()
